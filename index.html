@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Social links profile</title>
+  <style>
+    :root{
+      --Green: hsl(75, 94%, 57%);
+      --White: hsl(0, 0%, 100%);
+      --Grey700: hsl(0, 0%, 20%);
+      --Grey800: hsl(0, 0%, 12%);
+      --Grey900: hsl(0, 0%, 8%);
+    }
+    body {
+      background-color: var(--Grey900);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: -100px;
+      margin-bottom: -150px;
+      width: 1440px;
+      height: 960px;
+    }
+    .card{
+      background-color: var(--Grey800);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      row-gap: 20px;
+      width: 390px;
+      height: 700px;
+      border-radius: 15px;
+    }
+    .item{
+      display: flex;
+      justify-content: center;
+      background-color: var(--Grey700);
+      width: 300px;
+      height: 45px;
+      border-radius: 15px;
+    }
+    .item:hover{
+      background-color: var(--Green);
+      cursor: pointer;
+    }
+    .itemtext{
+      font-family: "Inter";
+      color: var(--White);
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .itemtext:hover{
+      color: var(--Grey800);
+    }
+    .name{
+      font-family: "Inter";
+      color: var(--White);
+      font-size: 28px;
+      font-weight: 700;
+      
+    }
+    .location{
+      font-family: "Inter";
+      color: var(--Green);
+      font-size: 14px;
+      margin-top: -40px;
+      font-weight: 600;
+    }
+    .role{
+      font-size: 14px;
+      font-family: "Inter";
+      color:var(--White);
+      font-weight: 400;
+    }
+    img{
+      border-radius: 100%;
+      width: 100px;
+      margin-bottom: -30px;
+    }
+    /*390x844*/
+    @media only screen and (min-width: 350px) and (max-width: 960px){
+      body{
+        margin: 50px auto;
+        width: 100%;
+        height: 100%;
+      }
+  }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="avatar.jpeg" alt="profile">
+    <p class="name">Jessica Randall</p>
+    <p class="location">London, United Kingdom</p>
+    <p class="role">"Front-end developer and avid reader."</p>
+    <div class="item">
+      <p class="itemtext">GitHub</p>
+    </div>
+    <div class="item">
+      <p class="itemtext">Frontend Mentor</p>
+    </div>
+    <div class="item">
+      <p class="itemtext">LinkedIn</p>
+    </div>
+    <div class="item">
+      <p class="itemtext">Twitter</p>
+    </div>
+    <div class="item">
+      <p class="itemtext">Instagram</p>
+    </div>
+  </div>
+</body>
+</html>
